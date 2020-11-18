@@ -1,0 +1,6 @@
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\bin\Debug\Modelos_y_ConexionDB.dll
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\bin\Debug\Modelos_y_ConexionDB.pdb
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\obj\Debug\Modelos_y_ConexionDB.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\obj\Debug\Modelos_y_ConexionDB.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\obj\Debug\Modelos_y_ConexionDB.dll
+C:\Users\USER\source\repos\Mensajeria\Modelos_y_ConexionDB\obj\Debug\Modelos_y_ConexionDB.pdb

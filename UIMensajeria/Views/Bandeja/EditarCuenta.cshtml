@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Editar Cuenta";
+    Layout = "~/Views/Bandeja/_LayoutPage1.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            
+                @Html.ActionLink("Atras", "MenuPrincipal")
+            
+        </div>
+        <div class="col-sm">
+            EditarCuenta
+        </div>
+    </div>
+</div>
+
+<div class="form-horizontal" style="width: 25rem; margin:auto">
+    <hr />
+    @using (Html.BeginForm("EditarCuenta", "Bandeja", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="form-group ">
+
+            <label for="nick">Nick</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" name="nick" value="@Session["Nickus"].ToString()" />
+
+            <label for="cont">Contraseña</label>
+            <input type="password" class="form-control" name="cont" value="@Session["Contus"].ToString()" />
+
+            <label for="nom">Nombre</label>
+            <input type="text" class="form-control" name="nom" value="@Session["Nomus"].ToString()" />
+
+            <label for="desc">Descripcion</label>
+            <input type="text" class="form-control" name="desc" value="@Session["Descus"].ToString()" />
+
+
+            <label for="foto">Foto</label>
+            <input type="file" class="form-control" name="foto">
+
+            <hr />
+            <button type="submit" class="btn btn-primary">Guardar</button>
+
+
+        </div>
+    }
+
+</div>

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Menu Principal";
+    Layout = "~/Views/Bandeja/_LayoutPage1.cshtml";
+}
+<div>
+    @model IEnumerable<Modelos_y_ConexionDB.Modelos.Usuario>
+
+    <h2></h2>
+    <p class="text-center">Bandeja de entrada</p>
+
+    <p>
+        <button type="button" class="btn btn-link">@Html.ActionLink("Cerrar Sesion", "Log", "Logueo")</button>
+    </p>
+
+    <hr />
+
+    <div class="container">
+        <div class="row">
+
+
+            @foreach (var item in Model)
+            {
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem; height:30rem">
+
+                        <img src="@item.Enlace" class="card-img-top" style="width: 18rem; height:18rem" />
+                        <div class="card-body">
+                            <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nombre)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">@Html.DisplayFor(modelItem => item.Nick)</h6>
+
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
+                            <button type="button" class="btn btn-light">@Html.ActionLink("Mensaje", "Mensaje", new { id = item.ID, nombre = item.Nombre })</button>
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>
