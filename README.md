@@ -1,5 +1,4 @@
 # MVC-Cs-SistemaDeMensajeria
-Es un sistema hecho en .Net Framework, con C#, base en Sql Server y UI con Bootstrap
 
 Es un sistema que permite mandar y recibir mensajes a traves de diferentes cuentas que se pueden crear y editar.
 
